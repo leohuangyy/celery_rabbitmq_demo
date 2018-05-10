@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+  <h1>random user</h1>
+  <form method="post">
+   {% csrf_token %}
+   <table>
+     {{ form }}
+   </table>
+   <button type="submit">submmit</button>
+  </form>
+ 
+{% endblock %}
